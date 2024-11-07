@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" onclick="showMoreInfo(1)">
+            <img src="ind2/abff662a-236d-480b-a63f-a744f4af43f6.jpg" alt="Image 1">
+            <div class="card-text">Card 1</div>
+        </div>
+        <div class="card" onclick="showMoreInfo(2)">
+            <img src="ind2/d8dc725e-ae6f-4ad0-902e-f5e1f6c85e53.jpg" alt="Image 2">
+            <div class="card-text">Card 2</div>
+        </div>
+        <div class="card" onclick="showMoreInfo(3)">
+            <img src="ind2/5c6c67d5-2179-46f5-a89d-7770b62d4704.jpg" alt="Image 3">
+            <div class="card-text">Card 3</div>
+        </div>
+    </div>
+
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p id="modal-text">More information will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
